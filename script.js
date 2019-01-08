@@ -90,7 +90,7 @@ function main() {
 		}, 100)
 }
 
-var dl= [{x:10,y:10},{x:-10,y:-10},{x:-10,y:10},{x:10,y:10}];
+var dl= [{x:20,y:20},{x:-20,y:-20},{x:-20,y:20},{x:20,y:20}];
 
 function drawLawnmower(position) {
 	var lawnMower = canvas.getContext("2d")
@@ -161,27 +161,29 @@ document.addEventListener("keydown",changeDirection);
 
 function gameOver() {
 	for (var i = 0; i < lp.length; i++) {
-		if(lp[i].x+1>=dp.x&&lp[i].x-1>=dp.x&&lp[i].y+1>=dp.y&&lp[i].y-1>=dp.y)
-				console.log("fdsafsdf");
+		if(lp[i].x+60>=dp.x&&lp[i].x-60<=dp.x&&lp[i].y+60>=dp.y&&lp[i].y-60<=dp.y)
+				return true;
 	}
+		// if(lp[0].x+50>=dp.x&&lp[0].x-50<=dp.x&&lp[0].y+50>=dp.y&&lp[0].y-50<=dp.y)
+		// 		console.log(lp[0],dp);
 	var hitLeftWall=dp.x<0
 	var hitRightWall=dp.x>canvasWidth-dogSizeWidth;
 	var hitTopWall=dp.y<0
 	var hitBottomWall=dp.y>canvasHeight-dogSizeHeight;
 	return hitBottomWall||hitTopWall||hitRightWall||hitLeftWall;
-};
+ };
 
 function reflect() {
 	
 for (var i = 0; i < lp.length; i++) {
 	if(lp[i].x<0)
-		dl[i].x=10;
+		dl[i].x=20;
 	if(lp[i].x>canvasWidth-lawnMowerWidth)
-		dl[i].x=-10;
+		dl[i].x=-20;
 	if (lp[i].y<0)
-		dl[i].y=10;
+		dl[i].y=20;
 	if (lp[i].y>canvasHeight-lawnMowerWidth)
-		dl[i].y=-10;
+		dl[i].y=-20;
 	}
 }
 
