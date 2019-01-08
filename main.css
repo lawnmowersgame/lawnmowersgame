@@ -6,8 +6,10 @@ h1{
 	color:#363755;
 	font-size: 4rem;
 }
-.main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+button{
+	width: 150px;
+	height: 120px;
+	background-color: #363755;
+	color: #F4F7F9;
 }
