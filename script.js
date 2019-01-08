@@ -134,20 +134,20 @@ var right=document.querySelector("#right");
 var left=document.querySelector("#left");
 var up=document.querySelector("#up");
 var down=document.querySelector("#down");
-right.addEventListener("click",function(){
+right.addEventListener("mousedown",function(){
 	dx=10;
 	dy=0;
 });
-left.addEventListener("click",function(){
+left.addEventListener("mousedown",function(){
 	dx=-10;
 		dy=0;
 });
-up.addEventListener("click",function(){
+up.addEventListener("mousedown",function(){
 	dx=0;
 		dy=-10;
 });
 
-down.addEventListener("click",function(){
+down.addEventListener("mousedown",function(){
 	dx=0;
 		dy=10;
 });
