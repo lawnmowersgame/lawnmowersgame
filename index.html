@@ -4,16 +4,32 @@
 	<title>Lawnmowers</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body style="display: flex; justify-content:center; align-content: center; flex-direction: column;">
+
 <h1>Lawnmowers</h1>
 
-<div class="main">
+<div style="display: flex;
+	justify-content: center;
+	align-items: center;"class="main">
 	
 	<canvas id="myCanvas" width="600" height="600" style="border: #363755 20px solid;"></canvas>
 
 </div>
 <br>
-	<h2 style="text-align: center">Score: <span id="score">0</span></h2>
+	<h1 style="text-align: center">Score: <span id="score">0</span></h1>
+	<!-- <button style="display:block;margin: auto;padding: auto" id="refresh"><h2>Refresh</h2></button> -->
+	<div style="display: flex;
+	justify-content: center;
+	align-items: center;">
+	<div style="margin=auto; display: flex; align-items: center; justify-content: space-around; height: 400px; width: 700px" id="buttons">
+	<button id="left"><h2>LEFT</h2></button>
+	<div style="display: flex; justify-content: space-around; flex-direction: column; height: 100%">
+	<button id="up"><h2>UP</h2></button>
+	<button id="down"><h2>DOWN</h2></button>
+	</div>
+	<button id="right"><h2>RIGHT</h2></button>
+	</div>
+	</div>
 <script type="text/javascript" src="script.js"> </script>
 </body>
 </html>
