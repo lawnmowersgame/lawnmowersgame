@@ -7,31 +7,38 @@
 <body style="display: flex; justify-content:center; align-content: center; flex-direction: column;">
 
 <h1>Lawnmowers</h1>
-
-<div style="display: flex;
-	justify-content: center;
-	align-items: center;"class="main">
-	
-	<canvas id="myCanvas" width="600" height="600" style="border: #363755 20px solid;"></canvas>
-
-</div>
-<br>
-	<h1 style="text-align: center">Score: <span id="score">0</span></h1>
-	<!-- <button style="display:block;margin: auto;padding: auto" id="refresh"><h2>Refresh</h2></button> -->
-	<div style="display: flex;
-	justify-content: center;
-	align-items: center;">
-	<div style="margin=auto; display: flex; align-items: center; justify-content: space-around; height: 400px; width: 700px" id="buttons">
-	<button id="left"><h2>LEFT</h2></button>
-	<div style="display: flex; justify-content: space-around; flex-direction: column; height: 100%">
-	<button id="up"><h2>UP</h2></button>
-	<button id="down"><h2>DOWN</h2></button>
-	</div>
-	<button id="right"><h2>RIGHT</h2></button>
-	</div>
-	</div>
-	<br>
-	<button style="background-color: #0075c4;margin:auto" onclick="myFunction()"><h2>REFRESH PAGE</h2></button>
+	<div style="margin:auto;display: flex; flex-wrap: wrap; flex-direction: row" class="maincontent">
+		<div style="display: flex flex-direction:column;
+			justify-content: center;
+			align-items: center;
+			margin: auto"class="main">
+			
+			<canvas id="myCanvas" width="600" height="600" style="border: #363755 20px solid;"></canvas>
+			<h1 style="text-align: center">Score: <span id="score">0</span></h1>
+		</div>
+		<br>
+			
+			<!-- <button style="display:block;margin: auto;padding: auto" id="refresh"><h2>Refresh</h2></button> -->
+			<div style="margin:auto;display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column">
+			<div style="margin=auto; display: flex; align-items: center; justify-content: space-around; height: 400px; width: 700px" id="buttons">
+			<button id="left"><h2>LEFT</h2></button>
+			<div style="display: flex; justify-content: space-around; flex-direction: column; height: 100%">
+			<button id="up"><h2>UP</h2></button>
+			<button id="down"><h2>DOWN</h2></button>
+			</div>
+			<button id="right"><h2>RIGHT</h2></button>
+			
+			</div>
+			<div>
+			<button style="background-color: #0075c4;margin:auto" onclick="myFunction()"><h2>REFRESH PAGE</h2></button>
+			</div>
+			</div>
+			<br>
+			
+		</div>
 <script type="text/javascript" src="script.js"> </script>
 </body>
 </html>
