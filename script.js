@@ -152,7 +152,9 @@ down.addEventListener("mousedown",function(){
 		dy=10;
 });
 
-
+function myFunction() {
+  location.reload();
+}
 
 
 
