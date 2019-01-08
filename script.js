@@ -130,6 +130,57 @@ function mainLawnmover() {
 		}, 100)
 }
 
+var right=document.querySelector("#right");
+var left=document.querySelector("#left");
+var up=document.querySelector("#up");
+var down=document.querySelector("#down");
+right.addEventListener("click",function(){
+	dx=10;
+	dy=0;
+});
+left.addEventListener("click",function(){
+	dx=-10;
+		dy=0;
+});
+up.addEventListener("click",function(){
+	dx=0;
+		dy=-10;
+});
+
+down.addEventListener("click",function(){
+	dx=0;
+		dy=10;
+});
+
+
+
+
+
+
+function changeDirectionButton(argument) {
+	var	keyPressed=argument.keyCode;
+	var leftKey=37;
+	var rigtKey=39;
+	var upKey=38;
+	var downKey=40;
+
+	if (keyPressed===leftKey) {
+		dx=-10;
+		dy=0;
+	}
+	if (keyPressed===rigtKey) {
+		dx=10;
+		dy=0;
+	}
+	if (keyPressed===upKey) {
+		dx=0;
+		dy=-10;
+	}
+	if (keyPressed===downKey) {
+		dx=0;
+		dy=10;
+	}
+}
 function changeDirection(argument) {
 	var	keyPressed=argument.keyCode;
 	var leftKey=37;
