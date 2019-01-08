@@ -214,7 +214,7 @@ document.addEventListener("keydown",changeDirection);
 
 function gameOver() {
 	for (var i = 0; i < lp.length; i++) {
-		if(lp[i].x+60>=dp.x&&lp[i].x-60<=dp.x&&lp[i].y+60>=dp.y&&lp[i].y-60<=dp.y)
+		if(lp[i].x+50>=dp.x&&lp[i].x-50<=dp.x&&lp[i].y+50>=dp.y&&lp[i].y-50<=dp.y)
 				return true;
 	}
 		// if(lp[0].x+50>=dp.x&&lp[0].x-50<=dp.x&&lp[0].y+50>=dp.y&&lp[0].y-50<=dp.y)
