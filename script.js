@@ -50,7 +50,7 @@ lawnMower4.fillRect(lp4.x,lp4.y,lawnMowerWidth,lawnMowerHeight);
 
 function drawDog() {
 	var dog = canvas.getContext("2d")
-	dog.fillStyle="brown";
+	dog.fillStyle="#993300";
 	dog.fillRect(dp.x,dp.y,dogSizeWidth,dogSizeHeight);
 	// body...
 }
